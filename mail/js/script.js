@@ -11,18 +11,20 @@ const email = document.querySelector('input');
 console.log(email);
 const button = document.querySelector('button');
 console.log(button);
-
+let risposta = document.getElementById('answer');
 
 button.addEventListener('click',
     function() {
         const myEmail = email.value;
         console.log('input', myEmail);
-
+        let ciao = myEmail + ' non è presente nel database';
+    
         for (let i = 0; i < listMail.length; i++) {
-            console.log(listMail[i]);
-            
+            if (listMail[i] === myEmail) {
+                ciao = myEmail + ' presente nel database';
+            }
         }
-
+        risposta.innerHTML = ciao;
     }
 );
 
