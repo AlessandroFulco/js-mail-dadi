@@ -6,12 +6,12 @@
 
 // creare un numero random per il computer
 const numComputer = document.getElementById('computer');
-const randomPc = Math.floor(Math.random() * (0, 6)) + 1;
+const randomPc = Math.floor(Math.random() * 6) + 1;
 numComputer.innerHTML = randomPc;
 
 // creare un numero random per il giocatore
 const numPlayer = document.getElementById('player');
-const randomMe = Math.floor(Math.random() * (0, 6)) + 1;
+const randomMe = Math.floor(Math.random() * 6) + 1;
 numPlayer.innerHTML = randomMe;
 
 // confrontare i due numeri e stabilire il più grande
