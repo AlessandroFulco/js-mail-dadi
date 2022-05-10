@@ -17,11 +17,11 @@ button.addEventListener('click',
     function() {
         const myEmail = email.value;
         console.log('input', myEmail);
-        let ciao = myEmail + ' non è presente nel database';
+        let data = myEmail + ' non è presente nel database';
     
         for (let i = 0; i < listMail.length; i++) {
             if (listMail[i] === myEmail) {
-                ciao = myEmail + ' presente nel database';
+                data = myEmail + ' presente nel database';
             }
         }
         risposta.innerHTML = ciao;
