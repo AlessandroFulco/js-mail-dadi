@@ -24,7 +24,7 @@ button.addEventListener('click',
                 data = myEmail + ' presente nel database';
             }
         }
-        risposta.innerHTML = ciao;
+        risposta.innerHTML = data;
     }
 );
 
